@@ -1,0 +1,4 @@
+name = "test-hono-validate-github-webhook"
+compatibility_date = "2023-01-01"
+
+compatibility_flags = [ "nodejs_compat" ]
