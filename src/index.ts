@@ -47,6 +47,6 @@ export function validateWebhook(options: Options) {
 
 const app = new Hono();
 
-app.get("/", validateWebhook({ secret: "secret" }), (c) => c.text("OK"));
+app.post("/", validateWebhook({ secret: "secret" }), (c) => c.text("OK"));
 
 export default app;
